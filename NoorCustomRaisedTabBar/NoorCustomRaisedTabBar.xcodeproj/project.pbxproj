@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C1EA4F31A0BF5710016A251 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1EA4F21A0BF5710016A251 /* Foundation.framework */; };
+		7C1EA4F51A0BF5710016A251 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1EA4F41A0BF5710016A251 /* CoreGraphics.framework */; };
+		7C1EA4F71A0BF5710016A251 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1EA4F61A0BF5710016A251 /* UIKit.framework */; };
+		7C1EA4FD1A0BF5720016A251 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C1EA4FB1A0BF5720016A251 /* InfoPlist.strings */; };
+		7C1EA4FF1A0BF5720016A251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EA4FE1A0BF5720016A251 /* main.m */; };
+		7C1EA5031A0BF5720016A251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EA5021A0BF5720016A251 /* AppDelegate.m */; };
+		7C1EA50B1A0BF5720016A251 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C1EA50A1A0BF5720016A251 /* Images.xcassets */; };
+		7C1EA5121A0BF5720016A251 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1EA5111A0BF5720016A251 /* XCTest.framework */; };
+		7C1EA5131A0BF5720016A251 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1EA4F21A0BF5710016A251 /* Foundation.framework */; };
+		7C1EA5141A0BF5720016A251 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1EA4F61A0BF5710016A251 /* UIKit.framework */; };
+		7C1EA51C1A0BF5720016A251 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C1EA51A1A0BF5720016A251 /* InfoPlist.strings */; };
+		7C1EA51E1A0BF5720016A251 /* NoorCustomRaisedTabBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EA51D1A0BF5720016A251 /* NoorCustomRaisedTabBarTests.m */; };
+		7C1EA52C1A0BFB690016A251 /* NoorCustomRaisedTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EA52A1A0BFB690016A251 /* NoorCustomRaisedTabBar.m */; };
+		7C1EA52D1A0BFB690016A251 /* NoorCustomRaisedTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C1EA52B1A0BFB690016A251 /* NoorCustomRaisedTabBar.xib */; };
+		7C1EA5311A0C8F8A0016A251 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EA52F1A0C8F8A0016A251 /* HomeViewController.m */; };
+		7C1EA5321A0C8F8A0016A251 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C1EA5301A0C8F8A0016A251 /* HomeViewController.xib */; };
+		7C1EA5361A0C930C0016A251 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EA5341A0C930C0016A251 /* RightViewController.m */; };
+		7C1EA5371A0C930C0016A251 /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C1EA5351A0C930C0016A251 /* RightViewController.xib */; };
+		7C1EA53B1A0C95FC0016A251 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EA5391A0C95FC0016A251 /* CenterViewController.m */; };
+		7C1EA53C1A0C95FC0016A251 /* CenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C1EA53A1A0C95FC0016A251 /* CenterViewController.xib */; };
+		7CA005801A0CAE14009042C0 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA0057E1A0CAE14009042C0 /* LeftViewController.m */; };
+		7CA005811A0CAE14009042C0 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA0057F1A0CAE14009042C0 /* LeftViewController.xib */; };
+		7CA0058F1A0D5097009042C0 /* JACenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA005841A0D5097009042C0 /* JACenterViewController.m */; };
+		7CA005901A0D5097009042C0 /* JADebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA005861A0D5097009042C0 /* JADebugViewController.m */; };
+		7CA005911A0D5097009042C0 /* JALeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA005881A0D5097009042C0 /* JALeftViewController.m */; };
+		7CA005921A0D5097009042C0 /* JARightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA0058A1A0D5097009042C0 /* JARightViewController.m */; };
+		7CA005931A0D5097009042C0 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA0058C1A0D5097009042C0 /* JASidePanelController.m */; };
+		7CA005941A0D5097009042C0 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA0058E1A0D5097009042C0 /* UIViewController+JASidePanel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C1EA5151A0BF5720016A251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C1EA4E71A0BF5710016A251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C1EA4EE1A0BF5710016A251;
+			remoteInfo = NoorCustomRaisedTabBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C1EA4EF1A0BF5710016A251 /* NoorCustomRaisedTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoorCustomRaisedTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1EA4F21A0BF5710016A251 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7C1EA4F41A0BF5710016A251 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7C1EA4F61A0BF5710016A251 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7C1EA4FA1A0BF5720016A251 /* NoorCustomRaisedTabBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NoorCustomRaisedTabBar-Info.plist"; sourceTree = "<group>"; };
+		7C1EA4FC1A0BF5720016A251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C1EA4FE1A0BF5720016A251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C1EA5001A0BF5720016A251 /* NoorCustomRaisedTabBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoorCustomRaisedTabBar-Prefix.pch"; sourceTree = "<group>"; };
+		7C1EA5011A0BF5720016A251 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7C1EA5021A0BF5720016A251 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7C1EA50A1A0BF5720016A251 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7C1EA5101A0BF5720016A251 /* NoorCustomRaisedTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoorCustomRaisedTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1EA5111A0BF5720016A251 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7C1EA5191A0BF5720016A251 /* NoorCustomRaisedTabBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NoorCustomRaisedTabBarTests-Info.plist"; sourceTree = "<group>"; };
+		7C1EA51B1A0BF5720016A251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C1EA51D1A0BF5720016A251 /* NoorCustomRaisedTabBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoorCustomRaisedTabBarTests.m; sourceTree = "<group>"; };
+		7C1EA5291A0BFB690016A251 /* NoorCustomRaisedTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoorCustomRaisedTabBar.h; sourceTree = "<group>"; };
+		7C1EA52A1A0BFB690016A251 /* NoorCustomRaisedTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoorCustomRaisedTabBar.m; sourceTree = "<group>"; };
+		7C1EA52B1A0BFB690016A251 /* NoorCustomRaisedTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoorCustomRaisedTabBar.xib; sourceTree = "<group>"; };
+		7C1EA52E1A0C8F8A0016A251 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		7C1EA52F1A0C8F8A0016A251 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		7C1EA5301A0C8F8A0016A251 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		7C1EA5331A0C930C0016A251 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		7C1EA5341A0C930C0016A251 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		7C1EA5351A0C930C0016A251 /* RightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
+		7C1EA5381A0C95FC0016A251 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		7C1EA5391A0C95FC0016A251 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
+		7C1EA53A1A0C95FC0016A251 /* CenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CenterViewController.xib; sourceTree = "<group>"; };
+		7CA0057D1A0CAE14009042C0 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		7CA0057E1A0CAE14009042C0 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		7CA0057F1A0CAE14009042C0 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		7CA005831A0D5097009042C0 /* JACenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACenterViewController.h; sourceTree = "<group>"; };
+		7CA005841A0D5097009042C0 /* JACenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACenterViewController.m; sourceTree = "<group>"; };
+		7CA005851A0D5097009042C0 /* JADebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JADebugViewController.h; sourceTree = "<group>"; };
+		7CA005861A0D5097009042C0 /* JADebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JADebugViewController.m; sourceTree = "<group>"; };
+		7CA005871A0D5097009042C0 /* JALeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALeftViewController.h; sourceTree = "<group>"; };
+		7CA005881A0D5097009042C0 /* JALeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALeftViewController.m; sourceTree = "<group>"; };
+		7CA005891A0D5097009042C0 /* JARightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARightViewController.h; sourceTree = "<group>"; };
+		7CA0058A1A0D5097009042C0 /* JARightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARightViewController.m; sourceTree = "<group>"; };
+		7CA0058B1A0D5097009042C0 /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
+		7CA0058C1A0D5097009042C0 /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
+		7CA0058D1A0D5097009042C0 /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
+		7CA0058E1A0D5097009042C0 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C1EA4EC1A0BF5710016A251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1EA4F51A0BF5710016A251 /* CoreGraphics.framework in Frameworks */,
+				7C1EA4F71A0BF5710016A251 /* UIKit.framework in Frameworks */,
+				7C1EA4F31A0BF5710016A251 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C1EA50D1A0BF5720016A251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1EA5121A0BF5720016A251 /* XCTest.framework in Frameworks */,
+				7C1EA5141A0BF5720016A251 /* UIKit.framework in Frameworks */,
+				7C1EA5131A0BF5720016A251 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C1EA4E61A0BF5710016A251 = {
+			isa = PBXGroup;
+			children = (
+				7C1EA4F81A0BF5720016A251 /* NoorCustomRaisedTabBar */,
+				7C1EA5171A0BF5720016A251 /* NoorCustomRaisedTabBarTests */,
+				7C1EA4F11A0BF5710016A251 /* Frameworks */,
+				7C1EA4F01A0BF5710016A251 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C1EA4F01A0BF5710016A251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C1EA4EF1A0BF5710016A251 /* NoorCustomRaisedTabBar.app */,
+				7C1EA5101A0BF5720016A251 /* NoorCustomRaisedTabBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C1EA4F11A0BF5710016A251 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C1EA4F21A0BF5710016A251 /* Foundation.framework */,
+				7C1EA4F41A0BF5710016A251 /* CoreGraphics.framework */,
+				7C1EA4F61A0BF5710016A251 /* UIKit.framework */,
+				7C1EA5111A0BF5720016A251 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C1EA4F81A0BF5720016A251 /* NoorCustomRaisedTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7C1EA5011A0BF5720016A251 /* AppDelegate.h */,
+				7C1EA5021A0BF5720016A251 /* AppDelegate.m */,
+				7CA0057D1A0CAE14009042C0 /* LeftViewController.h */,
+				7CA0057E1A0CAE14009042C0 /* LeftViewController.m */,
+				7CA0057F1A0CAE14009042C0 /* LeftViewController.xib */,
+				7C1EA5381A0C95FC0016A251 /* CenterViewController.h */,
+				7C1EA5391A0C95FC0016A251 /* CenterViewController.m */,
+				7C1EA53A1A0C95FC0016A251 /* CenterViewController.xib */,
+				7C1EA52E1A0C8F8A0016A251 /* HomeViewController.h */,
+				7C1EA52F1A0C8F8A0016A251 /* HomeViewController.m */,
+				7C1EA5301A0C8F8A0016A251 /* HomeViewController.xib */,
+				7C1EA5331A0C930C0016A251 /* RightViewController.h */,
+				7C1EA5341A0C930C0016A251 /* RightViewController.m */,
+				7C1EA5351A0C930C0016A251 /* RightViewController.xib */,
+				7C1EA5271A0BFB480016A251 /* Class */,
+				7C1EA50A1A0BF5720016A251 /* Images.xcassets */,
+				7C1EA4F91A0BF5720016A251 /* Supporting Files */,
+			);
+			path = NoorCustomRaisedTabBar;
+			sourceTree = "<group>";
+		};
+		7C1EA4F91A0BF5720016A251 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C1EA4FA1A0BF5720016A251 /* NoorCustomRaisedTabBar-Info.plist */,
+				7C1EA4FB1A0BF5720016A251 /* InfoPlist.strings */,
+				7C1EA4FE1A0BF5720016A251 /* main.m */,
+				7C1EA5001A0BF5720016A251 /* NoorCustomRaisedTabBar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C1EA5171A0BF5720016A251 /* NoorCustomRaisedTabBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C1EA51D1A0BF5720016A251 /* NoorCustomRaisedTabBarTests.m */,
+				7C1EA5181A0BF5720016A251 /* Supporting Files */,
+			);
+			path = NoorCustomRaisedTabBarTests;
+			sourceTree = "<group>";
+		};
+		7C1EA5181A0BF5720016A251 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C1EA5191A0BF5720016A251 /* NoorCustomRaisedTabBarTests-Info.plist */,
+				7C1EA51A1A0BF5720016A251 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C1EA5271A0BFB480016A251 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				7C1EA5281A0BFB480016A251 /* NoorCustomRaisedTabBar */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		7C1EA5281A0BFB480016A251 /* NoorCustomRaisedTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7C1EA5291A0BFB690016A251 /* NoorCustomRaisedTabBar.h */,
+				7C1EA52A1A0BFB690016A251 /* NoorCustomRaisedTabBar.m */,
+				7C1EA52B1A0BFB690016A251 /* NoorCustomRaisedTabBar.xib */,
+				7CA005821A0D5097009042C0 /* Source */,
+			);
+			path = NoorCustomRaisedTabBar;
+			sourceTree = "<group>";
+		};
+		7CA005821A0D5097009042C0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7CA005831A0D5097009042C0 /* JACenterViewController.h */,
+				7CA005841A0D5097009042C0 /* JACenterViewController.m */,
+				7CA005851A0D5097009042C0 /* JADebugViewController.h */,
+				7CA005861A0D5097009042C0 /* JADebugViewController.m */,
+				7CA005871A0D5097009042C0 /* JALeftViewController.h */,
+				7CA005881A0D5097009042C0 /* JALeftViewController.m */,
+				7CA005891A0D5097009042C0 /* JARightViewController.h */,
+				7CA0058A1A0D5097009042C0 /* JARightViewController.m */,
+				7CA0058B1A0D5097009042C0 /* JASidePanelController.h */,
+				7CA0058C1A0D5097009042C0 /* JASidePanelController.m */,
+				7CA0058D1A0D5097009042C0 /* UIViewController+JASidePanel.h */,
+				7CA0058E1A0D5097009042C0 /* UIViewController+JASidePanel.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C1EA4EE1A0BF5710016A251 /* NoorCustomRaisedTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1EA5211A0BF5720016A251 /* Build configuration list for PBXNativeTarget "NoorCustomRaisedTabBar" */;
+			buildPhases = (
+				7C1EA4EB1A0BF5710016A251 /* Sources */,
+				7C1EA4EC1A0BF5710016A251 /* Frameworks */,
+				7C1EA4ED1A0BF5710016A251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoorCustomRaisedTabBar;
+			productName = NoorCustomRaisedTabBar;
+			productReference = 7C1EA4EF1A0BF5710016A251 /* NoorCustomRaisedTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C1EA50F1A0BF5720016A251 /* NoorCustomRaisedTabBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1EA5241A0BF5720016A251 /* Build configuration list for PBXNativeTarget "NoorCustomRaisedTabBarTests" */;
+			buildPhases = (
+				7C1EA50C1A0BF5720016A251 /* Sources */,
+				7C1EA50D1A0BF5720016A251 /* Frameworks */,
+				7C1EA50E1A0BF5720016A251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C1EA5161A0BF5720016A251 /* PBXTargetDependency */,
+			);
+			name = NoorCustomRaisedTabBarTests;
+			productName = NoorCustomRaisedTabBarTests;
+			productReference = 7C1EA5101A0BF5720016A251 /* NoorCustomRaisedTabBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C1EA4E71A0BF5710016A251 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Noor;
+				TargetAttributes = {
+					7C1EA50F1A0BF5720016A251 = {
+						TestTargetID = 7C1EA4EE1A0BF5710016A251;
+					};
+				};
+			};
+			buildConfigurationList = 7C1EA4EA1A0BF5710016A251 /* Build configuration list for PBXProject "NoorCustomRaisedTabBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C1EA4E61A0BF5710016A251;
+			productRefGroup = 7C1EA4F01A0BF5710016A251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C1EA4EE1A0BF5710016A251 /* NoorCustomRaisedTabBar */,
+				7C1EA50F1A0BF5720016A251 /* NoorCustomRaisedTabBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C1EA4ED1A0BF5710016A251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1EA50B1A0BF5720016A251 /* Images.xcassets in Resources */,
+				7CA005811A0CAE14009042C0 /* LeftViewController.xib in Resources */,
+				7C1EA5371A0C930C0016A251 /* RightViewController.xib in Resources */,
+				7C1EA52D1A0BFB690016A251 /* NoorCustomRaisedTabBar.xib in Resources */,
+				7C1EA4FD1A0BF5720016A251 /* InfoPlist.strings in Resources */,
+				7C1EA5321A0C8F8A0016A251 /* HomeViewController.xib in Resources */,
+				7C1EA53C1A0C95FC0016A251 /* CenterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C1EA50E1A0BF5720016A251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1EA51C1A0BF5720016A251 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C1EA4EB1A0BF5710016A251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1EA5361A0C930C0016A251 /* RightViewController.m in Sources */,
+				7C1EA52C1A0BFB690016A251 /* NoorCustomRaisedTabBar.m in Sources */,
+				7CA005931A0D5097009042C0 /* JASidePanelController.m in Sources */,
+				7CA005941A0D5097009042C0 /* UIViewController+JASidePanel.m in Sources */,
+				7C1EA5031A0BF5720016A251 /* AppDelegate.m in Sources */,
+				7CA005901A0D5097009042C0 /* JADebugViewController.m in Sources */,
+				7C1EA4FF1A0BF5720016A251 /* main.m in Sources */,
+				7CA005801A0CAE14009042C0 /* LeftViewController.m in Sources */,
+				7C1EA5311A0C8F8A0016A251 /* HomeViewController.m in Sources */,
+				7CA0058F1A0D5097009042C0 /* JACenterViewController.m in Sources */,
+				7CA005911A0D5097009042C0 /* JALeftViewController.m in Sources */,
+				7C1EA53B1A0C95FC0016A251 /* CenterViewController.m in Sources */,
+				7CA005921A0D5097009042C0 /* JARightViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C1EA50C1A0BF5720016A251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1EA51E1A0BF5720016A251 /* NoorCustomRaisedTabBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C1EA5161A0BF5720016A251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C1EA4EE1A0BF5710016A251 /* NoorCustomRaisedTabBar */;
+			targetProxy = 7C1EA5151A0BF5720016A251 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C1EA4FB1A0BF5720016A251 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C1EA4FC1A0BF5720016A251 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7C1EA51A1A0BF5720016A251 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C1EA51B1A0BF5720016A251 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C1EA51F1A0BF5720016A251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7C1EA5201A0BF5720016A251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C1EA5221A0BF5720016A251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoorCustomRaisedTabBar/NoorCustomRaisedTabBar-Prefix.pch";
+				INFOPLIST_FILE = "NoorCustomRaisedTabBar/NoorCustomRaisedTabBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7C1EA5231A0BF5720016A251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoorCustomRaisedTabBar/NoorCustomRaisedTabBar-Prefix.pch";
+				INFOPLIST_FILE = "NoorCustomRaisedTabBar/NoorCustomRaisedTabBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7C1EA5251A0BF5720016A251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NoorCustomRaisedTabBar.app/NoorCustomRaisedTabBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoorCustomRaisedTabBar/NoorCustomRaisedTabBar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NoorCustomRaisedTabBarTests/NoorCustomRaisedTabBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7C1EA5261A0BF5720016A251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NoorCustomRaisedTabBar.app/NoorCustomRaisedTabBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoorCustomRaisedTabBar/NoorCustomRaisedTabBar-Prefix.pch";
+				INFOPLIST_FILE = "NoorCustomRaisedTabBarTests/NoorCustomRaisedTabBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C1EA4EA1A0BF5710016A251 /* Build configuration list for PBXProject "NoorCustomRaisedTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1EA51F1A0BF5720016A251 /* Debug */,
+				7C1EA5201A0BF5720016A251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1EA5211A0BF5720016A251 /* Build configuration list for PBXNativeTarget "NoorCustomRaisedTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1EA5221A0BF5720016A251 /* Debug */,
+				7C1EA5231A0BF5720016A251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1EA5241A0BF5720016A251 /* Build configuration list for PBXNativeTarget "NoorCustomRaisedTabBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1EA5251A0BF5720016A251 /* Debug */,
+				7C1EA5261A0BF5720016A251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C1EA4E71A0BF5710016A251 /* Project object */;
+}
